@@ -85,4 +85,4 @@ The business could help itself by considering the following features toward impr
 - Average surge: too many factors could inform the importance of this feature--too many to isolate (e.g., not enough drivers during a rush, a continuaton of an existing churn problem, a rebound pointing in favor of the company); churn could point downward toward average surge with weekday percentage; weekend promos could help that cause
 - The average distance feature could be helped by promotions based on longer trips
 ***
-#BIG SHOUT OUT TO JUPYTER NOTEBOOKS
+# BIG SHOUT OUT TO JUPYTER NOTEBOOKS
