@@ -61,6 +61,19 @@ The main reason choosing recall could be the wrong choice is under a tight marke
 
 
 ## Final Model Results
+After reviewing the model results and deciding upon our final model we updated the model to use the entirety of the training set to train our model and used the holdout set to test, giving the model more data than the previous versions.
+
+The final model output gaves us the following metrics.
+Precision: 73.5
+Recall: 65.88
+Accuracy: 78.17
+
+ ![alt text](https://github.com/shillis17/ride_share_churn_predictions/blob/master/img/final_model_confusionmatrix.png)
+
+
+We also used this model to show the features of most importance based on thepredictions of the model.
+ ![alt text](https://github.com/shillis17/ride_share_churn_predictions/blob/master/img/final_model_featureImp.png)
+The top 3 features of importance based on this model were average rating by driver, the city the customer is located in and the type of phone they own
 ***
 ## Conclusion
 
