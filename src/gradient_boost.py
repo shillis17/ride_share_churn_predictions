@@ -15,6 +15,7 @@ from sklearn.utils.multiclass import unique_labels
 from sklearn.metrics import make_scorer
 import numpy as np
 import matplotlib.pyplot as plt
+plt.style.use('ggplot')
 
 def prec(y_test, pred):
     tn, fp, fn, tp = confusion_matrix(y_test, pred).ravel()
@@ -148,6 +149,6 @@ pred = model.predict(X_test)
 graph()
 #print(cmatrix(y_test,pred))
 plot_confusion_matrix(y_test,pred)
-#print('Precision:',prec(y_test,pred))
-#print('Recall:',rec(y_test,pred))
-#print('Accuracy:',acc(y_test,pred))
+print('Precision:',prec(y_test,pred))
+print('Recall:',rec(y_test,pred))
+print('Accuracy:',acc(y_test,pred))
