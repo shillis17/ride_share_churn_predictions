@@ -21,5 +21,7 @@ for df in df_ls:
     df.city.replace('Astapor',0,inplace=True)
     df.city.replace('Winterfell',1,inplace=True)
     df.city.replace("King's Landing",2,inplace=True)
+    df.fillna({"avg_rating_by_driver" : 0., "avg_rating_of_driver" : 0.}, inplace=True)
+
 df_train.to_csv("../data/clean_train.csv")
 df_holdout.to_csv("../data/clean_holdout.csv")
