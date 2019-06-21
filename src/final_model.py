@@ -12,6 +12,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import make_scorer
+plt.style.use('ggplot')
 
 def prec(y_test, pred):
     tn, fp, fn, tp = confusion_matrix(y_test, pred).ravel()
