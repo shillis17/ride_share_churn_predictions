@@ -33,6 +33,17 @@ The data didn't need much cleaning, we made a churn column based on whether or n
 - luxury_car_user | Boolean on if the user took a luxury car in first 30 days
 - weekday_pct | Percentage of rides that occur during weekdays
 
+
+## Model Comparison
+
+
+## Metric Choice
+
+## Final Model Results
+
+## Conclusion
+
+
 # Deliverables
 Code you used to build the model. The more repeatable, self explanatory, the better.
 
@@ -57,9 +68,10 @@ Why?
 
 We ran a Grid Search to compare metrics across the XGBoost and Random Forest Classifier.
 
-Based on insights from the model, what plans do you propose to reduce churn?
-Sunil Gupta of the Harvard Business School identifies "Lean Into Your Best Customers" as his number one strategy for retention. As such, we optimized 
+Sunil Gupta of the Harvard Business School identifies "Lean Into Your Best Customers" as his number one strategy for retention. As such, we maximized our recall in order to cast the widest anti-churn net possible. We'd rather send out extra coupons, discounts, promos, etc. that won't be used than miss people who would maybe use the service an extra time due to a promotion.
 
 
 
 What are the potential impacts of implementing these plans or decisions? What performance metrics did you use to evaluate these decisions, why?
+
+If there is a tight marketing budget then it's better to maximize precision as ideally you want to try and prevent people who would churn first and foremost with the smallest investment possible.
