@@ -77,35 +77,10 @@ The top 3 features of importance based on this model were average rating by driv
 ***
 ## Conclusion
 
+The business could help itself by considering the following features toward improving churn:
 
-# Deliverables
-Code you used to build the model. The more repeatable, self explanatory, the better.
-
-A presentation including the following points:
-
-How did you compute the target?
-
-
-What model did you use in the end? We decided to go with XXXXXX. Why?
-
-In the end, we went with the XG Boost model based upon an informed business decision requiring us to optimize our model for Recall.
-
-Average rating by driver was the most influential factor in our analysis
-- User experience was identified as the fourth most important factor in reducing churn
-- While allowing users to rate their drivers may benefit an aggregate of other customers, a process whereby drivers rate riders does't benefit other users
-
-Alternative models you considered? Why are they not good enough?
-What performance metric did you use to evaluate the model? We used a confusion matrix to evaluate Recall, Accuracy... 
-
-Why?
-- Not as concerned about RMSE or R^2
-
-We ran a Grid Search to compare metrics across the XGBoost and Random Forest Classifier.
-
-Sunil Gupta of the Harvard Business School identifies "Lean Into Your Best Customers" as his number one strategy for retention. As such, we maximized our recall in order to cast the widest anti-churn net possible. We'd rather send out extra coupons, discounts, promos, etc. that won't be used than miss people who would maybe use the service an extra time due to a promotion.
-
-
-
-What are the potential impacts of implementing these plans or decisions? What performance metrics did you use to evaluate these decisions, why?
-
-If there is a tight marketing budget then it's better to maximize precision as ideally you want to try and prevent people who would churn first and foremost with the smallest investment possible.
+- Given the most important on the feature list was average rating by driver in the context of churn, this decision by the company had all the potential to disincentivize customers--including its most loyal customers.
+- Reorganizing incentives to loyal customers could combat this problem
+- Onboarding customers more smoothly into the user process--e.g., via the app, could reduce churn, and simultaneously account for the feature importance of 'phone' which as a feature might not otherwise make sense as a prioritized feature
+- Average surge: too many factors could inform the importance of this feature--too many to isolate (e.g., not enough drivers during a rush, a continuaton of an existing churn problem, a rebound pointing in favor of the company); churn could point downward toward average surge with weekday percentage; weekend promos could help that cause
+- The average distance feature could be helped by promotions based on longer trips
