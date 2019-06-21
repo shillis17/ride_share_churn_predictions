@@ -11,8 +11,8 @@ for df in df_ls:
     df["churn"] = df['last_trip_date'].copy()
     churn_date = datetime.datetime(2014, 6, 1)
     churn_true = set(df[df["churn"] >= churn_date]["churn"].index)
-    churn_false = set(df[df["churn"] != True]["churn"].index)
     df.loc[churn_true, "churn"] = True
+    churn_false = set(df[df["churn"] != True]["churn"].index)
     df.loc[churn_false, "churn"] = False
 
 df_train.to_csv("../data/clean_train.csv")
