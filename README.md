@@ -84,3 +84,5 @@ The business could help itself by considering the following features toward impr
 - Onboarding customers more smoothly into the user process--e.g., via the app, could reduce churn, and simultaneously account for the feature importance of 'phone' which as a feature might not otherwise make sense as a prioritized feature
 - Average surge: too many factors could inform the importance of this feature--too many to isolate (e.g., not enough drivers during a rush, a continuaton of an existing churn problem, a rebound pointing in favor of the company); churn could point downward toward average surge with weekday percentage; weekend promos could help that cause
 - The average distance feature could be helped by promotions based on longer trips
+***
+#BIG SHOUT OUT TO JUPYTER NOTEBOOKS
