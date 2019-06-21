@@ -40,13 +40,15 @@ def graph():
         value = []
         for i in range (len(items)):
             label.append(items[i][0])
-            value.append(items[i][1])    
+            value.append(items[i][1])
     fig,ax = plt.subplots(figsize=(12,10))
+    fig.tight_layout(pad=10)
+    plt.xticks(rotation=90)
     plt.bar(label,value)
     plt.title("Feature importances")
     plt.xlim([-1, X_test.shape[1]])
-    plt.xticks(rotation=90)
-    plt.savefig('../img/final_model_featureImp.png')
+    plt.xticks(rotation=45)
+    plt.savefig('../img/final_model_featureImp.png',dpi=500)
 
 def plot_confusion_matrix(y_true, y_pred,
                           title=None,
