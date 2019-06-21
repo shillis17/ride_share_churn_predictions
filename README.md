@@ -52,6 +52,12 @@ So with these clear similarities and differences between the models, how did we 
 
 ## Metric Choice
 ***
+
+Sunil Gupta of the Harvard Business School identifies "Lean Into Your Best Customers" as his number one strategy for retention. As such, we maximized our recall in order to cast the widest anti-churn net possible. We'd rather send out extra coupons, discounts, promos, etc. that won't be used than miss people who would maybe use the service an extra time due to a promotion.
+
+The main reason this could be the wrong choice is under a tight marketing budget. It’d be better to maximize precision as ideally you want to try and prevent people who would churn first and foremost with the smallest investment possible.
+
+
 ## Final Model Results
 ***
 ## Conclusion
