@@ -43,8 +43,27 @@ The data didn't need much cleaning, we made a churn column based on whether or n
 
 ***
 ## Model Comparison
-
 ***
+For our models we looked at a RandomForestClassifier and an XGBoostClassifier. We tuned the hyperparameters of these models using an extensive GridSearchCV. Overall the models came out relatively similar in performance. The confusion matrix for the RandomForest model was:
+
+![rf_confusion_matrix](https://github.com/shillis17/ride_share_churn_predictions/blob/master/img/random_forest_confusion_matrix_normalized.png)
+
+The matrix for the XGBoost model was:
+
+![xg_confusion_matrix](https://github.com/shillis17/ride_share_churn_predictions/blob/master/img/gradient_boost_confusionmatrix.png)
+
+These are really interesting to look at because the RandomForest model has a MUCH better true positive representation (66% vs 85% of true predictions) but the XGBoost model had a significantly better true negative representaion (86% vs 65% of false predictions)
+
+There was much more correlation between the feature importance of the models though, as seen here:
+
+![rf_feature_importance](https://github.com/shillis17/ride_share_churn_predictions/blob/master/img/random_forest_feature_importance.png)
+
+![xg_feature_importance](https://github.com/shillis17/ride_share_churn_predictions/blob/master/img/gradient_boost_featureImp.png)
+
+Both models considered the average rating received from the driver the most important feature with the type of phone also in the top 5. What's most interesting is that the boost model saw the luxury car use as a pretty important feature whereas the RandomForest model considered it the single least important.
+
+So with these clear similarities and differences between the models, how did we decide which one to do with to test on the holdout data?
+
 ## Metric Choice
 ***
 ## Final Model Results
