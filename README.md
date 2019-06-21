@@ -11,20 +11,6 @@ Table of Contents
  * [Conclusion](#conclusion)
 <!--te-->
 
-# Work Flow
-Perform any cleaning, exploratory analysis, and/or visualizations to use the provided data for this analysis.
-
-Build a predictive model to help determine the probability that a rider will be retained.
-
-Evaluate the model. Focus on metrics that are important for your statistical model.
-
-Identify / interpret features that are the most influential in affecting your predictions.
-
-Discuss the validity of your model. Issues such as leakage. For more on leakage, see this essay on Kaggle, and this paper: Leakage in Data Mining: Formulation, Detection, and Avoidance.
-
-Repeat 2 - 5 until you have a satisfactory model.
-
-Consider business decisions that your model may indicate are appropriate. Evaluate possible decisions with metrics that are appropriate for decision rules.
 ***
 ## Cleaning
 
@@ -41,7 +27,7 @@ The data didn't need much cleaning, we made a churn column based on whether or n
 - luxury_car_user | Boolean on if the user took a luxury car in first 30 days
 - weekday_pct | Percentage of rides that occur during weekdays
 
-***
+
 ## Model Comparison
 ***
 For our models we looked at a RandomForestClassifier and an XGBoostClassifier. We tuned the hyperparameters of these models using an extensive GridSearchCV. Overall the models came out relatively similar in performance. The confusion matrix for the RandomForest model was:
