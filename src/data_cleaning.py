@@ -15,5 +15,5 @@ for df in df_ls:
     df.loc[churn_true, "churn"] = True
     df.loc[churn_false, "churn"] = False
 
-df_train.to_csv("data/clean_train.csv")
-df_holdout.to_csv("data/clean_holdout.csv")
+df_train.to_csv("../data/clean_train.csv")
+df_holdout.to_csv("../data/clean_holdout.csv")
