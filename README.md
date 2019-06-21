@@ -1,8 +1,15 @@
 # Case Study - Churn Prediction
-
+ ![alt text](https://github.com/shillis17/ride_share_churn_predictions/blob/master/img/Ride_Shares.jpg)
 __Question__: Which factors are the best predictors for retention regarding ride-share churn?
 
-
+Table of Contents
+<!--ts-->
+ * [Cleaning](#cleaning)
+ * [Model Comparison](#model-comparison)
+ * [Metric Choice](#metric-choice)
+ * [Final Model Results](#final-model-results)
+ * [Conclusion](#conclusion)
+<!--te-->
 
 # Work Flow
 Perform any cleaning, exploratory analysis, and/or visualizations to use the provided data for this analysis.
@@ -18,6 +25,7 @@ Discuss the validity of your model. Issues such as leakage. For more on leakage,
 Repeat 2 - 5 until you have a satisfactory model.
 
 Consider business decisions that your model may indicate are appropriate. Evaluate possible decisions with metrics that are appropriate for decision rules.
+***
 ## Cleaning
 
 The data didn't need much cleaning, we made a churn column based on whether or not the user's last ride was within the last 30 days from when the data was pulled (July 1st, 2014). So any person who's last ride was before June 1st, 2014 was considered churned. The date columns were dropped and string values were changed into dummy variables. All missing values were replaced with 0s.  The final features we predicted on were:
@@ -33,14 +41,14 @@ The data didn't need much cleaning, we made a churn column based on whether or n
 - luxury_car_user | Boolean on if the user took a luxury car in first 30 days
 - weekday_pct | Percentage of rides that occur during weekdays
 
-
+***
 ## Model Comparison
 
-
+***
 ## Metric Choice
-
+***
 ## Final Model Results
-
+***
 ## Conclusion
 
 
