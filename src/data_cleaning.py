@@ -18,7 +18,8 @@ for df in df_ls:
     df.loc[churn_true, "churn"] = True
     churn_false = set(df[df["churn"] != True]["churn"].index)
     df.loc[churn_false, "churn"] = False
-
-df_train = df_train.city.replace('Astapor',0).replace('Winterfell',1).replace('King\'s Landing',2)
+    df.city.replace('Astapor',0,inplace=True)
+    df.city.replace('Winterfell',1,inplace=True)
+    df.city.replace("King's Landing",2,inplace=True)
 df_train.to_csv("../data/clean_train.csv")
 df_holdout.to_csv("../data/clean_holdout.csv")
